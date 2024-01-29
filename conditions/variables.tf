@@ -1,9 +1,14 @@
 variable "instance_name" {
   type = string
-  default = "web"
+  default = "mongodb"
 }
 
 variable "ami_id" {
   type = string
-  default = "ami-03265a0778a880afb"
+  default = "ami-0f3c7d07486cad139"
+}
+variable "tags" {
+  default = {
+    Name = "mongodb"
+  }
 }
